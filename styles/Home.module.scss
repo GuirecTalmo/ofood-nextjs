@@ -1,0 +1,166 @@
+@import "./globals.scss";
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.background {
+  background-image: url(https://i89.servimg.com/u/f89/09/02/66/41/backgr10.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  bottom: -220px;
+  z-index: -747;
+}
+
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.leftContainer {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightContainer {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainTitle {
+  font-size: 82px;
+  color: map-get(map-get($themes, "light"), "base9");
+  font-weight: 400;
+}
+
+.pictureContainer {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.textContainer {
+  display: flex;
+}
+
+.sideBar {
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #c33149;
+  margin: 0px;
+  margin-right: 3rem;
+}
+
+.presentationText {
+  font-size: 16px;
+  line-height: 2rem;
+  max-width: 70%;
+  margin: 0px;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  @media (min-width: $desktop_width) {
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+}
+
+.btnPrimary {
+  background: linear-gradient(
+    90deg,
+    rgba(109, 152, 80, 1) 0%,
+    rgba(147, 203, 109, 1) 100%
+  );
+  color: #fff;
+}
+
+.greenTitle {
+  color: map-get(map-get($themes, "light"), "base9");
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.subTitle {
+  font-size: 21px;
+  font-weight: 600;
+  width: 100%;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topBar {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #c33149;
+  margin: 0px;
+  width: 3rem;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.boxContact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  background-color: map-get(map-get($themes, "light"), "base0");
+  border-radius: 10px;
+}
+
+.mainQuestion {
+  color: map-get(map-get($themes, "light"), "base5");
+  font-size: 16px;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contactlink {
+  color: map-get(map-get($themes, "light"), "base9");
+  font-size: 14px;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+}
