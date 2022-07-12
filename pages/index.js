@@ -28,21 +28,21 @@ function HomePage() {
           <div className={styles.pictureContainer}>
             <Image
               alt="logo__img"
-              src="https://i89.servimg.com/u/f89/09/02/66/41/image-10.png"
+              src="/assets/img/image-ofood-1.svg"
               layout="fill"
             />
           </div>
         </div>
-        <div className={styles.leftContainer}>
+        <div className={styles.leftContainer2}>
           <div className={styles.pictureContainer}>
             <Image
               alt="logo__img"
-              src="https://i89.servimg.com/u/f89/09/02/66/41/image-11.png"
+              src="/assets/img/image-ofood-2.svg"
               layout="fill"
             />
           </div>
         </div>
-        <div className={styles.rightContainer}>
+        <div className={styles.rightContainer2}>
           <h3 className={styles.greenTitle}>O&apos;food</h3>
           <h4 className={styles.subTitle}>Qu&apos;est-ce que O&apos;food ?</h4>
           <span className={styles.topBar}></span>
