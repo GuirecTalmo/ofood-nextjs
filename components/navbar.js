@@ -22,7 +22,10 @@ export default function navBar() {
         </label>
 
         <ul className="nav__list">
-          <li>Accueil</li>
+          <Link href={"/"}>
+            <li>Accueil</li>
+          </Link>
+
           <li>Se connecter</li>
           <li>S&apos;inscrire</li>
         </ul>

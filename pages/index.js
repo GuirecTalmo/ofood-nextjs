@@ -61,7 +61,9 @@ function HomePage() {
           <p className={styles.mainQuestion}>
             Des questions ? Nous sommes là !
           </p>
-          <p className={styles.contactlink}>Nous contacter</p>
+          <Link href={`/contact`}>
+            <a className={styles.contactlink}>Nous contacter</a>
+          </Link>
         </div>
       </div>
     </div>
