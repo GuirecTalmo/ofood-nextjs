@@ -4,15 +4,13 @@ import Link from "next/link";
 export default function navBar() {
   return (
     <div className="nav_container">
-      <span className="logo">
+      <div className="logo">
         <Image
           alt="logo__img"
           src="https://i89.servimg.com/u/f89/09/02/66/41/logo-p10.png"
-          className="logo__img"
-          width={259}
-          height={102}
+          layout="fill"
         />
-      </span>
+      </div>
       <nav className="nav">
         <input type="checkbox" id="toggle-nav" />
         <label htmlFor="toggle-nav">

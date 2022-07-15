@@ -78,8 +78,8 @@
     list-style: none;
     position: absolute;
     right: 0;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: baseline;
     justify-content: center;
     background-color: map-get(map-get($themes, "light"), "base0");
@@ -92,6 +92,7 @@
     z-index: 10;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
     text-align: center;
+    padding-left: 0px;
 
     &::after {
       content: "";
@@ -108,8 +109,10 @@
       position: relative;
       font-size: 13px;
       font-weight: 400;
-      min-width: 6rem;
+      min-width: 8rem;
       cursor: pointer;
+      box-sizing: border-box;
+      padding-left: 0px;
 
       &:not(:last-child) {
         border-bottom: 1px solid map-get(map-get($themes, "light"), "base4");
@@ -164,11 +167,9 @@
 }
 
 .logo {
-  max-width: 150px;
-}
-
-.logo__img {
-  width: 100%;
+  width: 150px;
+  height: 63px;
+  position: relative;
 }
 
 .footer_container {

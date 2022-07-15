@@ -1,10 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 
 function HomePage() {
   return (
     <div className={styles.main}>
+      <Head>
+        <title>O'food</title>
+        <link rel="icon" href="#" />
+      </Head>
       <div className={styles.background}></div>
       <div className={styles.homeContainer}>
         <div className={styles.leftContainer}>
