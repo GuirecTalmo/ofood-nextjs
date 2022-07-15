@@ -1,0 +1,47 @@
+@import "./globals.scss";
+
+.boxCgu {
+  max-width: 700px;
+  display: block;
+  margin: auto;
+  padding: 1rem 3rem 3rem 3rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  @media (min-width: $desktop_width) {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    padding: 1rem 3rem 3rem 3rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+}
+
+.imgCgu {
+  max-width: 150px;
+  height: 140px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: map-get(map-get($themes, "light"), "base1");
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sub {
+  font-size: 1rem;
+  font-weight: 600;
+  color: map-get(map-get($themes, "light"), "base5");
+}
+
+.text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: map-get(map-get($themes, "light"), "base5");
+}

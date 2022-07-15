@@ -5,7 +5,11 @@ export default function Footer() {
   return (
     <footer className="footer_container">
       <ul className="nav-footer">
-        <li className="link-footer">Mentions légales</li>
+        <Link href={`/mentions`}>
+          <li className="link-footer">
+            <a>Mentions légales</a>
+          </li>
+        </Link>
         <Link href={`/contact`}>
           <li className="link-footer">
             <a>Contact</a>
