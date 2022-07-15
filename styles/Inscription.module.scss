@@ -1,0 +1,89 @@
+@import "./globals.scss";
+
+.main {
+  width: 100%;
+  display: flex;
+}
+
+.leftContainer {
+  width: 100%;
+  background-color: map-get(map-get($themes, "light"), "base4");
+  max-height: 600px;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop_width) {
+    width: 40%;
+    background-color: map-get(map-get($themes, "light"), "base4");
+    height: 600px;
+    padding: 5rem;
+    box-sizing: border-box;
+  }
+}
+
+.rightContainer {
+  display: none;
+
+  @media (min-width: $desktop_width) {
+    width: 60%;
+    background-color: map-get(map-get($themes, "light"), "base0");
+    height: 600px;
+    padding: 3rem;
+    display: block;
+    box-sizing: border-box;
+  }
+}
+
+.bgContainer {
+  position: relative;
+  max-width: 600px;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
+.formInscription {
+  width: 100%;
+  background-color: map-get(map-get($themes, "light"), "base0");
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputEmail {
+  width: 100%;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: map-get(map-get($themes, "light"), "base7");
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.inputEmail:focus {
+  outline: none;
+}
+
+.boxInFormSubmit {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.alreadySub {
+  width: 100%;
+  font-size: 0.8rem;
+  color: map-get(map-get($themes, "light"), "base5");
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.colorLink {
+  color: map-get(map-get($themes, "light"), "base9");
+  cursor: pointer;
+}

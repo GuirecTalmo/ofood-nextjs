@@ -25,9 +25,12 @@ export default function navBar() {
           <Link href={"/"}>
             <li>Accueil</li>
           </Link>
-
-          <li>Se connecter</li>
-          <li>S&apos;inscrire</li>
+          <Link href={"/connexion/"}>
+            <li>Se connecter</li>
+          </Link>
+          <Link href={"/inscription/"}>
+            <li>S&apos;inscrire</li>
+          </Link>
         </ul>
       </nav>
     </div>
