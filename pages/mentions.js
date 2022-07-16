@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Cgu.module.scss";
 import stylesContact from "../styles/Contact.module.scss";
+import Layout from "../components/Layout";
 
-function MentionLegales() {
+export default function Cgu() {
   return (
     <div className={stylesContact.main}>
       <div className={styles.boxCgu}>
@@ -94,4 +95,6 @@ function MentionLegales() {
   );
 }
 
-export default MentionLegales;
+Cgu.getLayout = function getLayout(Cgu) {
+  return <Layout>{Cgu}</Layout>;
+};

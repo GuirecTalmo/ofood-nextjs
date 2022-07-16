@@ -3,8 +3,9 @@ import Link from "next/link";
 import styles from "../styles/Inscription.module.scss";
 import stylesContact from "../styles/Contact.module.scss";
 import stylesHome from "../styles/Home.module.scss";
+import Layout from "../components/Layout";
 
-function Inscription() {
+export default function Connexion() {
   return (
     <div className={styles.main}>
       <div className={styles.leftContainer}>
@@ -30,12 +31,14 @@ function Inscription() {
               <input className={styles.inputEmail} type="password" />
             </div>
             <div className={styles.boxInFormSubmit}>
-              <button
-                className={`${stylesHome.btn} ${stylesHome.btnPrimary}`}
-                type="submit"
-              >
-                S'inscrire
-              </button>
+              <Link href={"/dashboard/"}>
+                <button
+                  className={`${stylesHome.btn} ${stylesHome.btnPrimary}`}
+                  type="submit"
+                >
+                  Connexion
+                </button>
+              </Link>
             </div>
           </form>
           <p className={styles.alreadySub}>
@@ -59,4 +62,6 @@ function Inscription() {
   );
 }
 
-export default Inscription;
+Connexion.getLayout = function getLayout(Connexion) {
+  return <Layout>{Connexion}</Layout>;
+};

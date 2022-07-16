@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Contact.module.scss";
+import Layout from "../components/Layout";
 
-function Contact() {
+export default function Contact() {
   return (
     <div className={styles.main}>
       <div className={styles.boxTitle}>
@@ -78,4 +79,6 @@ function Contact() {
   );
 }
 
-export default Contact;
+Contact.getLayout = function getLayout(Contact) {
+  return <Layout>{Contact}</Layout>;
+};

@@ -3,8 +3,9 @@ import Link from "next/link";
 import styles from "../styles/Inscription.module.scss";
 import stylesContact from "../styles/Contact.module.scss";
 import stylesHome from "../styles/Home.module.scss";
+import Layout from "../components/Layout";
 
-function Inscription() {
+export default function Inscription() {
   return (
     <div className={styles.main}>
       <div className={styles.leftContainer}>
@@ -68,4 +69,6 @@ function Inscription() {
   );
 }
 
-export default Inscription;
+Inscription.getLayout = function getLayout(Inscription) {
+  return <Layout>{Inscription}</Layout>;
+};
