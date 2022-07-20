@@ -139,13 +139,15 @@
   }
 }
 
-.nav_container {
+.nav_container_dashboard {
   width: 90%;
   background-color: map-get(map-get($themes, "light"), "base0");
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding: 10px;
+  padding-left: 6rem;
 
   @media (max-width: $desktop_width) {
     width: 90%;
@@ -165,36 +167,10 @@
   }
 }
 
-.logo {
-  width: 150px;
-  height: 63px;
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
   position: relative;
-}
-
-.footer_container {
-  width: 100%;
-  display: flex;
-  height: 6rem;
-  background-color: map-get(map-get($themes, "light"), "base6");
-  color: map-get(map-get($themes, "light"), "base7");
-  flex-shrink: 0;
-}
-
-.nav-footer {
-  display: inline-block;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 400;
-  list-style: none;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  padding-top: 2rem;
-}
-
-.link-footer {
-  float: right;
-  margin-left: 1rem;
-  font-size: 14px;
-  font-weight: 300;
-  cursor: pointer;
 }

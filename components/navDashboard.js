@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function navBarDashboard() {
   return (
-    <div className="nav_container">
-      <div className="logo">
+    <div className="nav_container_dashboard">
+      <div className="avatar">
         <Image
           alt="logo__img"
-          src="https://i89.servimg.com/u/f89/09/02/66/41/logo-p10.png"
+          src="https://i89.servimg.com/u/f89/09/02/66/41/avmys10.jpg"
           layout="fill"
         />
       </div>
@@ -20,9 +20,6 @@ export default function navBarDashboard() {
         </label>
 
         <ul className="nav__list">
-          <Link href={"/"}>
-            <li>Dashboard</li>
-          </Link>
           <Link href={"/connexion/"}>
             <li>Déconnexion</li>
           </Link>
