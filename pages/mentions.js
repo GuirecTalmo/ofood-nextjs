@@ -11,7 +11,9 @@ export default function Cgu() {
         <div className={styles.imgCgu}>
           <Image alt="img_cgu" src="/assets/img/img_cgu.svg" layout="fill" />
         </div>
-        <h1 className={styles.title}>Conditions générales d'utilisation</h1>
+        <h1 className={styles.title}>
+          Conditions générales d&apos;utilisation
+        </h1>
         <h2 className={styles.sub}>
           <span>Article 1</span> : <span>Objet</span>{" "}
         </h2>
@@ -27,7 +29,8 @@ export default function Cgu() {
           <span>Article 2</span> : <span>Accès au site</span>
         </h2>
         <p className={styles.text}>
-          Le site O'Food permet d’accéder gratuitement aux services suivants :
+          Le site O&apos;Food permet d’accéder gratuitement aux services
+          suivants :
         </p>
         <ol className={styles.text}>
           <li>Proposition de recettes (petit dejeuner, diner, dessert…)</li>
@@ -62,7 +65,7 @@ export default function Cgu() {
           <span>Article 4</span> : <span>Propriété intellectuelle</span>
         </h2>
         <p className={styles.text}>
-          Les marques, logos ainsi que les contenus du site O'Food
+          Les marques, logos ainsi que les contenus du site O&apos;Food
           (illustrations graphiques, textes…) sont protégés par le Code de la
           propriété intellectuelle et par le droit d’auteur.La reproduction et
           la copie des contenus par l’Utilisateur requièrent une autorisation
@@ -75,16 +78,16 @@ export default function Cgu() {
         <p className={styles.text}>
           Bien que les informations publiées sur le site soient réputées
           fiables, le site se réserve la faculté d’une non-garantie de la
-          fiabilité des sources.Les informations diffusées sur le site O'Food
-          sont présentées à titre purement informatif et sont sans valeur
-          contractuelle. En dépit des mises à jour régulières, la responsabilité
-          du site ne peut être engagée en cas de modification des dispositions
-          administratives et juridiques apparaissant après la publication. Il en
-          est de même pour l’utilisation et l’interprétation des informations
-          communiquées sur la plateforme.Le site décline toute responsabilité
-          concernant les éventuels virus pouvant infecter le matériel
-          informatique de l’Utilisateur après l’utilisation ou l’accès à ce
-          site.Le site ne peut être tenu pour responsable en cas de force
+          fiabilité des sources.Les informations diffusées sur le site
+          O&apos;Food sont présentées à titre purement informatif et sont sans
+          valeur contractuelle. En dépit des mises à jour régulières, la
+          responsabilité du site ne peut être engagée en cas de modification des
+          dispositions administratives et juridiques apparaissant après la
+          publication. Il en est de même pour l’utilisation et l’interprétation
+          des informations communiquées sur la plateforme.Le site décline toute
+          responsabilité concernant les éventuels virus pouvant infecter le
+          matériel informatique de l’Utilisateur après l’utilisation ou l’accès
+          à ce site.Le site ne peut être tenu pour responsable en cas de force
           majeure ou du fait imprévisible et insurmontable d’un tiers.La
           garantie totale de la sécurité et la confidentialité des données n’est
           pas assurée par le site. Cependant, le site s’engage à mettre en œuvre

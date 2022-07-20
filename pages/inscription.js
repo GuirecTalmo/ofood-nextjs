@@ -44,7 +44,7 @@ export default function Inscription() {
                 className={`${stylesHome.btn} ${stylesHome.btnPrimary}`}
                 type="submit"
               >
-                S'inscrire
+                S&apos;inscrire
               </button>
             </div>
           </form>

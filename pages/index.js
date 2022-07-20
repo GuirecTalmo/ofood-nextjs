@@ -20,8 +20,8 @@ export default function HomePage() {
             <p className={styles.presentationText}>
               Vous souhaitez vous rééquilibrer sur le plan alimentaire ? Vous
               souhaitez perdre du poids ou en gagner de manière durable et
-              atteindre le bon équilibre pour votre corps ? Alors O’food est la
-              solution !
+              atteindre le bon équilibre pour votre corps ? Alors O&apos;food
+              est la solution !
             </p>
           </div>
           <div className={styles.ButtonContainer}>
