@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className={styles.main}>
       <Head>
-        <title>O'food</title>
+        <title>O&apos;food</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.background}></div>

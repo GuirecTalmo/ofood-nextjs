@@ -17,11 +17,11 @@ export default function Cgu() {
         </h2>
         <p className={styles.text}>
           Les présentes CGU ou Conditions Générales d’Utilisation encadrent
-          juridiquement l’utilisation des services du site O'Food (ci-après
-          dénommé « le site »). Constituant le contrat entre la société O'Food,
-          l’Utilisateur, l’accès au site doit être précédé de l’acceptation de
-          ces CGU. L’accès à cette plateforme signifie l’acceptation des
-          présentes CGU.
+          juridiquement l’utilisation des services du site O&apos;Food (ci-après
+          dénommé « le site »). Constituant le contrat entre la société
+          O&apos;Food, l’Utilisateur, l’accès au site doit être précédé de
+          l’acceptation de ces CGU. L’accès à cette plateforme signifie
+          l’acceptation des présentes CGU.
         </p>
         <h2 className={styles.sub}>
           <span>Article 2</span> : <span>Accès au site</span>
