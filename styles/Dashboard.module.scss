@@ -3,7 +3,7 @@
 .main {
   background-color: #fff7ea;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 
@@ -15,10 +15,21 @@
   padding-left: 0px;
   background-color: map-get(map-get($themes, "light"), "base0");
   margin-top: 0px;
-  list-style: none;
   @media (max-width: $desktop_width) {
     display: none;
   }
+}
+
+.flexContainerRight {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.ulMenu {
+  list-style: none;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 .linkMenu {
@@ -27,4 +38,167 @@
   text-align: left;
   padding: 15px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.linkMenu:hover {
+  font-size: 0.8 rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: map-get(map-get($themes, "light"), "base6");
+  transition: 1s;
+}
+
+.infoContainer {
+  display: flex;
+  background-color: white;
+  max-width: 60%;
+  max-height: 160px;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  @media (max-width: $desktop_width) {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    max-height: 400px;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+
+  @media (max-width: $desktop_width) {
+    width: 100%;
+  }
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 5px;
+
+  @media (max-width: $desktop_width) {
+    text-align: center;
+  }
+}
+
+.simpleText {
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: 100%;
+  text-align: justify;
+
+  @media (max-width: $desktop_width) {
+    text-align: center;
+  }
+}
+
+.buttonContainer {
+  align-items: center;
+  display: flex;
+}
+
+.mainCardContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+
+.title__day {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.separateLane {
+  width: 60%;
+  margin-left: 0rem;
+  margin-bottom: 2rem;
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin-bottom: 3rem;
+}
+
+.Card {
+  max-width: 250px;
+  width: 200px;
+  height: 250px;
+  background-color: map-get(map-get($themes, "light"), "base0");
+  border-radius: 19px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  @media (max-width: $desktop_width) {
+    height: 95px !important;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.container__picture {
+  width: 100%;
+  position: relative;
+  height: 129px;
+  border-radius: 19px 19px 0px 0px;
+  overflow: hidden;
+}
+
+.picture__card {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.name__recipe {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.time__recipe {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.button__card {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 19px 19px;
+  background-color: map-get(map-get($themes, "light"), "base2");
+  color: map-get(map-get($themes, "light"), "base0");
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  @media (max-width: $desktop_width) {
+    display: none;
+  }
 }

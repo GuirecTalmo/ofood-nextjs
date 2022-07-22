@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function navBarDashboard() {
   return (
-    <div className="nav_container_dashboard">
+    <nav className="nav_container_dashboard">
       <div className="avatar">
         <Image
           alt="logo__img"
@@ -25,6 +25,6 @@ export default function navBarDashboard() {
           </Link>
         </ul>
       </nav>
-    </div>
+    </nav>
   );
 }
