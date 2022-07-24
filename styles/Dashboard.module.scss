@@ -5,6 +5,13 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+
+  @media (max-width: $desktop_width) {
+    background-color: #fff7ea;
+    width: 100%;
+    display: flex;
+    min-height: 30vh;
+  }
 }
 
 .flexContainerLeft {
@@ -69,7 +76,8 @@
     margin: auto;
     margin-top: 15px;
     flex-wrap: wrap;
-    max-height: 400px;
+    max-height: 200px;
+    margin-bottom: 10px;
   }
 }
 
@@ -115,6 +123,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 2rem;
+
+  @media (max-width: $desktop_width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0rem;
+    padding: 2rem;
+  }
 }
 
 .title__day {
@@ -129,6 +145,10 @@
   width: 60%;
   margin-left: 0rem;
   margin-bottom: 2rem;
+
+  @media (max-width: $desktop_width) {
+    width: 100%;
+  }
 }
 
 .card__container {
@@ -136,6 +156,10 @@
   justify-content: space-between;
   width: 55%;
   margin-bottom: 3rem;
+
+  @media (max-width: $desktop_width) {
+    width: 100%;
+  }
 }
 
 .Card {
@@ -149,6 +173,7 @@
 
   @media (max-width: $desktop_width) {
     height: 95px !important;
+    width: 95px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0);
   }
