@@ -13,7 +13,7 @@ export default function Dashboard() {
           <Link href={"/dashboard/"}>
             <li className={styles.linkMenu}>Accueil</li>
           </Link>
-          <Link href={"#"}>
+          <Link href={"/profil/"}>
             <li className={styles.linkMenu}>Profil</li>
           </Link>
         </ul>
@@ -34,6 +34,8 @@ export default function Dashboard() {
             </button>
           </div>
         </div>
+
+        {/* CARDS */}
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Lundi</h2>
@@ -97,6 +99,403 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+        {/* END CARDS */}
+
+        {/* CARDS */}
+
+        <div className={styles.mainCardContainer}>
+          <h2 className={styles.title__day}>Mardi</h2>
+          <hr className={styles.separateLane} />
+          <div className={styles.card__container}>
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* END CARDS */}
+
+        {/* CARDS */}
+
+        <div className={styles.mainCardContainer}>
+          <h2 className={styles.title__day}>Mercredi</h2>
+          <hr className={styles.separateLane} />
+          <div className={styles.card__container}>
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* END CARDS */}
+
+        {/* CARDS */}
+
+        <div className={styles.mainCardContainer}>
+          <h2 className={styles.title__day}>Jeudi</h2>
+          <hr className={styles.separateLane} />
+          <div className={styles.card__container}>
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* END CARDS */}
+
+        {/* CARDS */}
+
+        <div className={styles.mainCardContainer}>
+          <h2 className={styles.title__day}>Vendredi</h2>
+          <hr className={styles.separateLane} />
+          <div className={styles.card__container}>
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* END CARDS */}
+
+        {/* CARDS */}
+
+        <div className={styles.mainCardContainer}>
+          <h2 className={styles.title__day}>Samedi</h2>
+          <hr className={styles.separateLane} />
+          <div className={styles.card__container}>
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* END CARDS */}
+
+        {/* CARDS */}
+
+        <div className={styles.mainCardContainer}>
+          <h2 className={styles.title__day}>Dimanche</h2>
+          <hr className={styles.separateLane} />
+          <div className={styles.card__container}>
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.Card}>
+              <div className={styles.container__picture}>
+                <Image
+                  alt="image de la recette"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <div>
+                <h3 className={styles.name__recipe}> Recipe Name </h3>
+                <p className={styles.time__recipe}>15 mins</p>
+              </div>
+              <div>
+                <button className={styles.button__card} type="button">
+                  Commencer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* END CARDS */}
       </div>
     </div>
   );

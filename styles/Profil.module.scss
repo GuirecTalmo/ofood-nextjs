@@ -1,0 +1,81 @@
+@import "./globals.scss";
+
+.main {
+  background-color: #fff7ea;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+
+  @media (max-width: $desktop_width) {
+    background-color: #fff7ea;
+    width: 100%;
+    display: flex;
+    min-height: 30vh;
+  }
+}
+
+.profilFormContainer {
+  width: 500px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  @media (max-width: $desktop_width) {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 10rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+}
+
+.profilForm {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profilFormBloc {
+  width: 100%;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.labelProfil {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: map-get(map-get($themes, "light"), "base7");
+}
+
+.inputProfil {
+  width: 40%;
+  border: none;
+  background-color: map-get(map-get($themes, "light"), "base6");
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 0.7rem;
+}
+
+.inputProfil:focus {
+  outline: none;
+}
+
+.labelGenre {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.IntoleranceBox {
+  margin-top: 1rem;
+  width: 30%;
+}
