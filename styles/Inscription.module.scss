@@ -2,7 +2,7 @@
 
 .main {
   width: 100%;
-  min-height: 100vh;
+  min-height: 82vh;
   display: flex;
 }
 
@@ -15,9 +15,10 @@
 
   @media (min-width: $desktop_width) {
     width: 40%;
+    min-height: 82vh;
     background-color: map-get(map-get($themes, "light"), "base4");
-    min-height: 100vh;
     padding: 5rem;
+    padding-top: 3rem;
     box-sizing: border-box;
   }
 }
@@ -28,7 +29,6 @@
   @media (min-width: $desktop_width) {
     width: 60%;
     background-color: map-get(map-get($themes, "light"), "base0");
-    height: 600px;
     padding: 3rem;
     display: block;
     box-sizing: border-box;
@@ -44,14 +44,29 @@
 }
 
 .formInscription {
-  width: 100%;
-  background-color: map-get(map-get($themes, "light"), "base0");
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  max-width: 450px;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+
+  @media (min-width: $desktop_width) {
+    max-width: 450px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
 }
 
 .inputEmail {

@@ -18,17 +18,18 @@
   width: 500px;
   margin-top: 2rem;
   margin-left: 2rem;
-  background-color: white;
+  background-color: map-get(map-get($themes, "light"), "base0");
   padding: 2rem;
   box-sizing: border-box;
   margin-bottom: 5rem;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 5px;
 
   @media (max-width: $desktop_width) {
     width: 90%;
     margin: auto;
     margin-top: 2rem;
-    background-color: white;
+    background-color: map-get(map-get($themes, "light"), "base0");
     padding: 2rem;
     box-sizing: border-box;
     margin-bottom: 10rem;
@@ -73,6 +74,10 @@
 .labelGenre {
   margin-left: 10px;
   margin-right: 10px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: map-get(map-get($themes, "light"), "base7");
 }
 
 .IntoleranceBox {

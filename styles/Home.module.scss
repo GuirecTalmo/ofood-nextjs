@@ -22,7 +22,16 @@
   max-width: 1475px;
   margin: auto;
   position: relative;
-  padding: 4rem;
+  padding: 2rem;
+
+  @media (min-width: $desktop_width) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1475px;
+    margin: auto;
+    position: relative;
+    padding: 4rem;
+  }
 }
 
 .leftContainer {

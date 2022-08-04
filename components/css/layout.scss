@@ -180,6 +180,8 @@
   background-color: map-get(map-get($themes, "light"), "base6");
   color: map-get(map-get($themes, "light"), "base7");
   flex-shrink: 0;
+  position: relative;
+  z-index: 666;
 }
 
 .nav-footer {
