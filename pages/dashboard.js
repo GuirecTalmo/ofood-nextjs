@@ -3,27 +3,11 @@ import Link from "next/link";
 import styles from "../styles/Dashboard.module.scss";
 import stylesHome from "../styles/Home.module.scss";
 import DashboardLayout from "../components/DashboardLayout";
-import { AiOutlineHome } from "react-icons/ai";
-import { BsPerson } from "react-icons/bs";
 import "normalize.css";
 
 export default function Dashboard() {
   return (
     <div className={styles.main}>
-      <div className={styles.flexContainerLeft}>
-        <ul className={styles.ulMenu}>
-          <Link href={"/dashboard/"}>
-            <li className={styles.linkMenu}>
-              <AiOutlineHome />
-            </li>
-          </Link>
-          <Link href={"/profil/"}>
-            <li className={styles.linkMenu}>
-              <BsPerson />
-            </li>
-          </Link>
-        </ul>
-      </div>
       <div className={styles.flexContainerRight}>
         <div className={styles.infoContainer}>
           <div className={styles.textContainer}>

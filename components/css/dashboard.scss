@@ -8,6 +8,12 @@
   overflow: hidden;
 }
 
+.navSize {
+  position: fixed;
+  z-index: 666;
+  width: 100%;
+}
+
 .nav {
   // Animation burger menu
   input[type="checkbox"] + label {
@@ -140,14 +146,16 @@
 }
 
 .nav_container_dashboard {
-  width: 90%;
-  background-color: map-get(map-get($themes, "light"), "base0");
+  width: 100%;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   padding: 10px;
   padding-left: 6rem;
+  padding-right: 6rem;
+  box-sizing: border-box;
 
   @media (max-width: $desktop_width) {
     width: 90%;
@@ -173,4 +181,58 @@
   width: 48px;
   height: 48px;
   position: relative;
+}
+
+.flexContainerLeft {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 5.5rem;
+  padding-left: 0px;
+  background-color: map-get(map-get($themes, "light"), "base0");
+  margin-top: 0px;
+  @media (max-width: $desktop_width) {
+    display: none;
+  }
+}
+
+.ulMenu {
+  list-style: none;
+  padding-left: 0px;
+  padding-top: 0px;
+  margin-top: 0rem;
+}
+
+.linkMenu {
+  font-size: 0.8 rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.linkMenu:hover {
+  font-size: 0.8 rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: map-get(map-get($themes, "light"), "base6");
+  transition: 1s;
+}
+
+.iconNav {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: map-get(map-get($themes, "light"), "base7");
+  margin: auto;
+  display: block;
+}
+
+.mobileDisplay {
+  display: block;
+  @media (min-width: $desktop_width) {
+    display: none !important;
+  }
 }

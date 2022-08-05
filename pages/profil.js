@@ -10,16 +10,6 @@ import "normalize.css";
 export default function Profil() {
   return (
     <div className={stylesDashboard.main}>
-      <div className={stylesDashboard.flexContainerLeft}>
-        <ul className={stylesDashboard.ulMenu}>
-          <Link href={"/dashboard/"}>
-            <li className={stylesDashboard.linkMenu}>Accueil</li>
-          </Link>
-          <Link href={"#"}>
-            <li className={stylesDashboard.linkMenu}>Profil</li>
-          </Link>
-        </ul>
-      </div>
       <div className={styles.profilFormContainer}>
         <form className={styles.profilForm}>
           <div className={styles.profilFormBloc}>

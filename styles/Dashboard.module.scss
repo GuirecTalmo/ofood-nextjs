@@ -5,25 +5,17 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+  margin-left: 5rem;
+  margin-top: 4.2rem;
 
   @media (max-width: $desktop_width) {
     background-color: #fff7ea;
     width: 100%;
     display: flex;
     min-height: 30vh;
-  }
-}
-
-.flexContainerLeft {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 5.5rem;
-  padding-left: 0px;
-  background-color: map-get(map-get($themes, "light"), "base0");
-  margin-top: 0px;
-  @media (max-width: $desktop_width) {
-    display: none;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    padding-top: 6rem;
   }
 }
 
@@ -31,31 +23,6 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-}
-
-.ulMenu {
-  list-style: none;
-  padding-left: 0px;
-  padding-top: 0px;
-}
-
-.linkMenu {
-  font-size: 0.8 rem;
-  font-weight: 300;
-  text-align: left;
-  padding: 15px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.linkMenu:hover {
-  font-size: 0.8 rem;
-  font-weight: 300;
-  text-align: left;
-  padding: 15px;
-  box-sizing: border-box;
-  background-color: map-get(map-get($themes, "light"), "base6");
-  transition: 1s;
 }
 
 .infoContainer {
@@ -155,7 +122,7 @@
 .card__container {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 42rem;
   margin-bottom: 3rem;
 
   @media (max-width: $desktop_width) {
