@@ -25,9 +25,11 @@ export default function HomePage() {
             </p>
           </div>
           <div className={styles.ButtonContainer}>
-            <button className={`${styles.btn} ${styles.btnPrimary}`}>
-              Découvrir O&apos;food
-            </button>
+            <Link href={`/inscription`}>
+              <button className={`${styles.btn} ${styles.btnPrimary}`}>
+                Découvrir O&apos;food
+              </button>
+            </Link>
           </div>
         </div>
         <div className={styles.rightContainer}>
