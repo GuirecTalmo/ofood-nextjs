@@ -191,6 +191,7 @@
   padding-left: 0px;
   background-color: map-get(map-get($themes, "light"), "base0");
   margin-top: 0px;
+  position: fixed;
   @media (max-width: $desktop_width) {
     display: none;
   }
@@ -200,7 +201,7 @@
   list-style: none;
   padding-left: 0px;
   padding-top: 0px;
-  margin-top: 0rem;
+  margin-top: 4rem;
 }
 
 .linkMenu {
