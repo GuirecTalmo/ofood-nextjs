@@ -29,7 +29,10 @@ export default function Dashboard() {
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Lundi</h2>
-          <hr className={styles.separateLane} />
+          <div className={styles.lineContainer}>
+            <hr className={styles.separateLane} />
+          </div>
+
           <div className={styles.card__container}>
             <div className={styles.Card}>
               <div className={styles.container__picture}>
@@ -95,7 +98,9 @@ export default function Dashboard() {
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Mardi</h2>
-          <hr className={styles.separateLane} />
+          <div className={styles.lineContainer}>
+            <hr className={styles.separateLane} />
+          </div>
           <div className={styles.card__container}>
             <div className={styles.Card}>
               <div className={styles.container__picture}>
@@ -161,7 +166,9 @@ export default function Dashboard() {
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Mercredi</h2>
-          <hr className={styles.separateLane} />
+          <div className={styles.lineContainer}>
+            <hr className={styles.separateLane} />
+          </div>
           <div className={styles.card__container}>
             <div className={styles.Card}>
               <div className={styles.container__picture}>
@@ -227,7 +234,9 @@ export default function Dashboard() {
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Jeudi</h2>
-          <hr className={styles.separateLane} />
+          <div className={styles.lineContainer}>
+            <hr className={styles.separateLane} />
+          </div>
           <div className={styles.card__container}>
             <div className={styles.Card}>
               <div className={styles.container__picture}>
@@ -293,7 +302,9 @@ export default function Dashboard() {
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Vendredi</h2>
-          <hr className={styles.separateLane} />
+          <div className={styles.lineContainer}>
+            <hr className={styles.separateLane} />
+          </div>
           <div className={styles.card__container}>
             <div className={styles.Card}>
               <div className={styles.container__picture}>
@@ -359,7 +370,9 @@ export default function Dashboard() {
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Samedi</h2>
-          <hr className={styles.separateLane} />
+          <div className={styles.lineContainer}>
+            <hr className={styles.separateLane} />
+          </div>
           <div className={styles.card__container}>
             <div className={styles.Card}>
               <div className={styles.container__picture}>
@@ -425,7 +438,9 @@ export default function Dashboard() {
 
         <div className={styles.mainCardContainer}>
           <h2 className={styles.title__day}>Dimanche</h2>
-          <hr className={styles.separateLane} />
+          <div className={styles.lineContainer}>
+            <hr className={styles.separateLane} />
+          </div>
           <div className={styles.card__container}>
             <div className={styles.Card}>
               <div className={styles.container__picture}>

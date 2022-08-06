@@ -23,7 +23,7 @@ export default function navBarDashboard() {
           </label>
 
           <ul className="nav__list">
-            <Link href={"/index/"}>
+            <Link href={"/"}>
               <li className="mobileDisplay">Accueil</li>
             </Link>
             <Link href={"/dashboard/"}>

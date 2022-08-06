@@ -158,8 +158,8 @@
   box-sizing: border-box;
 
   @media (max-width: $desktop_width) {
-    width: 90%;
-    padding: 1.5rem 0.5rem;
+    width: 100%;
+    padding: 1.5rem 2rem;
     background-color: map-get(map-get($themes, "light"), "base0");
     display: flex;
     justify-content: space-between;

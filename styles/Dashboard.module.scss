@@ -23,6 +23,10 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+
+  @media (max-width: $desktop_width) {
+    margin-bottom: 5rem;
+  }
 }
 
 .infoContainer {
@@ -109,8 +113,12 @@
   margin-top: 30px;
 }
 
+.lineContainer {
+  width: 100%;
+}
+
 .separateLane {
-  width: 60%;
+  width: 48rem;
   margin-left: 0rem;
   margin-bottom: 2rem;
 
