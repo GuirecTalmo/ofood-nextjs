@@ -1,5 +1,34 @@
 @import "./globals.scss";
 
+.main {
+  background-color: #fff7ea;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5rem;
+  margin-top: 4.2rem;
+
+  @media (max-width: $desktop_width) {
+    background-color: #fff7ea;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30vh;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    padding-top: 6rem;
+  }
+}
+
+.buttonBackContainer {
+  width: 100%;
+
+  @media (max-width: $desktop_width) {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+}
 .buttonBack {
   border: none;
   border-radius: 25px;
@@ -25,13 +54,101 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     cursor: pointer;
+    margin-left: 4rem;
+    margin-top: 3rem;
   }
 }
 
-.cardRecipe {
-  width: 13rem;
-  height: 20rem;
-  background-color: #fff;
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  width: 42rem;
+  margin-bottom: 3rem;
   margin-top: 3rem;
-  margin-left: 6rem;
+  margin-left: 4rem;
+
+  @media (max-width: $desktop_width) {
+    width: 100%;
+    margin-left: 0rem;
+  }
+}
+
+.Card {
+  max-width: 500px;
+  width: 500px;
+  background-color: map-get(map-get($themes, "light"), "base0");
+  border-radius: 19px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  @media (max-width: $desktop_width) {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.container__picture {
+  width: 100%;
+  position: relative;
+  height: 200px;
+  border-radius: 19px 19px 0px 0px;
+  overflow: hidden;
+}
+
+.picture__card {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.name__recipe {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.time__recipe {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.TitleRecipeBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.LineRecipeContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.LineRecipe {
+  width: 90%;
+  border-color: red;
+}
+
+.ListContainer {
+  padding: 2rem;
+  padding-top: 0rem;
+}
+
+.TitleStep {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.Ulsteps {
+  list-style: none;
+}
+
+.LiSteps {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.3rem;
 }
