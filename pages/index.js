@@ -3,6 +3,9 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout";
+import firebase from "../firebase/firebaseConfig";
+import WriteToCloudFirestore from "../components/cloudFirestore/Write";
+import ReadDataFromCloudFirestore from "../components/cloudFirestore/Read";
 
 export default function HomePage() {
   return (
