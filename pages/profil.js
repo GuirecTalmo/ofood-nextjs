@@ -68,13 +68,21 @@ export default function Profil() {
             </div>
           </div>
 
-          <div className={styles.profilFormBloc}>
-            <label className={styles.labelProfil} htmlFor="avatar">
-              AVATAR
+          <div className={styles.profilFormBlocLast}>
+            <p className={styles.labelProfil}>AVATAR</p>
+            <div className="avatar">
+              <Image
+                alt="logo__img"
+                src="https://i89.servimg.com/u/f89/09/02/66/41/avmys10.jpg"
+                layout="fill"
+              />
+            </div>
+            <label className={styles.labelProfilAvatar} htmlFor="avatar">
+              Modifier
             </label>
-
             <input
               type="file"
+              className={styles.file}
               id="avatar"
               name="avatar"
               accept="image/png, image/jpeg"

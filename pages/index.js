@@ -3,9 +3,6 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout";
-import firebase from "../firebase/firebaseConfig";
-import WriteToCloudFirestore from "../components/cloudFirestore/Write";
-import ReadDataFromCloudFirestore from "../components/cloudFirestore/Read";
 
 export default function HomePage() {
   return (
@@ -59,12 +56,14 @@ export default function HomePage() {
           <span className={styles.topBar}></span>
           <div className={styles.textContainer}>
             <p className={styles.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
-              hendrerit purus. Etiam diam libero, euismod vitae faucibus ut,
-              ultricies nec arcu. Maecenas ligula urna, viverra sit amet erat a,
-              vestibulum faucibus nisi. Praesent a libero a ipsum lacinia
-              bibendum efficitur quis sem. In hendrerit scelerisque porta. Sed
-              aliquam bibendum lorem sit amet mollis.
+              Les cuisiniers en herbe sont rares. Souvent, le soir, on va
+              préférer le plat de pâtes gruyère au risottos courgettes et
+              champignons ou au pavé de saumon et sa julienne de légumes. Les
+              raisons sont multiples et toutes ou presque légitimes : Manque de
+              temps, d&apos;argent, de passion, etc. L&apos;application ne
+              s&apos;en cachera pas : Elle vous prendra par la main tout en
+              respectant vos carences de cuisinier avec pour but final : Vous
+              rééquilibrer alimentairement parlant.
             </p>
           </div>
         </div>

@@ -1,16 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "../styles/Inscription.module.scss";
-import stylesContact from "../styles/Contact.module.scss";
-import stylesHome from "../styles/Home.module.scss";
 import Layout from "../components/Layout";
-import FirebaseAuth from "../components/auth/FirebaseAuth";
+import Signin from "../components/auth/Connexion";
 
 export default function Connexion() {
   return (
     <div className={styles.main}>
       <div className={styles.leftContainer}>
-        <FirebaseAuth />
+        <Signin />
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.bgContainer}>

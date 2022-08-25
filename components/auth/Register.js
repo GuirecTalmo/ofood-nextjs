@@ -1,52 +1,35 @@
+import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
 import Link from "next/link";
 import styles from "../../styles/Inscription.module.scss";
 import stylesContact from "../../styles/Contact.module.scss";
 import stylesHome from "../../styles/Home.module.scss";
 
-export default Register;
-
-function Register() {
+export default function Register() {
   const router = useRouter();
+  const form = useRef();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const onChangeEmail = (e) => {
+    const email = e.target.value;
+    setEmail(email);
+  };
+  const onChangePassword = (e) => {
+    const password = e.target.value;
+    setPassword(password);
+  };
 
-  // form validation rules
-  const validationSchema = Yup.object().shape({
-    email: Yup.string().required("Username is required"),
-    password: Yup.string()
-      .required("Password is required")
-      .min(6, "Password must be at least 6 characters"),
-    passwordConfirmation: Yup.string().oneOf(
-      [Yup.ref("password"), null],
-      "Passwords must match"
-    ),
-  });
-  const formOptions = { resolver: yupResolver(validationSchema) };
-
-  // get functions to build form with useForm() hook
-  const { register, handleSubmit, formState } = useForm(formOptions);
-  const { errors } = formState;
-
-  function onSubmit(user) {
-    return userService
-      .register(user)
-      .then(() => {
-        alertService.success("Registration successful", {
-          keepAfterRouteChange: true,
-        });
-        router.push("login");
-      })
-      .catch(alertService.error);
-  }
+  const handleRegister = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+  };
 
   return (
     <div className={styles.formInscription}>
       <form
         className={stylesContact.contactForm}
-        onSubmit={handleSubmit(onSubmit)}
-        method="post"
+        onSubmit={handleRegister}
+        ref={form}
       >
         <div className={stylesContact.boxInForm}>
           <p className={stylesContact.subtitleForm}>Inscription</p>
@@ -57,7 +40,8 @@ function Register() {
           </label>
           <input
             name="email"
-            {...register("email")}
+            value={email}
+            onChange={onChangeEmail}
             className={styles.inputEmail}
             type="email"
           />
@@ -69,7 +53,8 @@ function Register() {
           <input
             name="password"
             type="password"
-            {...register("password")}
+            value={password}
+            onChange={onChangePassword}
             className={styles.inputEmail}
           />
         </div>
@@ -79,7 +64,6 @@ function Register() {
           </label>
           <input
             name="passwordConfirmation"
-            {...register("passwordConfirmation")}
             className={styles.inputEmail}
             type="password"
           />

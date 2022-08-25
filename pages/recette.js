@@ -8,7 +8,9 @@ export default function Recette() {
   return (
     <div className={styles.main}>
       <div className={styles.buttonBackContainer}>
-        <button className={styles.buttonBack}>Retour</button>
+        <Link href={`/dashboard`}>
+          <button className={styles.buttonBack}>Retour</button>
+        </Link>
       </div>
       <div className={styles.card__container}>
         <div className={styles.Card}>
