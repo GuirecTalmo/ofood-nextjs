@@ -237,3 +237,28 @@
     display: none !important;
   }
 }
+
+.searchbar {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: map-get(map-get($themes, "light"), "base6");
+  height: 2rem;
+  width: 16rem;
+  color: map-get(map-get($themes, "light"), "base7");
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  margin-left: 3rem;
+}
+
+::placeholder {
+  color: map-get(map-get($themes, "light"), "base7");
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.leftSubContainer {
+  display: flex;
+  align-items: center;
+}
