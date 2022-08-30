@@ -25,7 +25,7 @@ export default function Admin() {
 
         <div className={styles.mainCardContainer}>
           <div className={styles.card__container}>
-            <Link href={"/recette/"}>
+            <Link href={"/recetteForm/"}>
               <div className={styles.Card}>
                 <div>
                   <button className={adminStyles.button__add} type="button">
@@ -37,7 +37,7 @@ export default function Admin() {
                 </div>
               </div>
             </Link>
-            <Link href={"/recette/"}>
+            <Link href={"/recetteForm/"}>
               <div className={styles.Card}>
                 <div className={adminStyles.container__picture}>
                   <Image
@@ -56,7 +56,7 @@ export default function Admin() {
                 </div>
               </div>
             </Link>
-            <Link href={"/recette/"}>
+            <Link href={"/recetteForm/"}>
               <div className={styles.Card}>
                 <div className={adminStyles.container__picture}>
                   <Image
