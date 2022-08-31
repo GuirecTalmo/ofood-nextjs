@@ -6,7 +6,7 @@ export default function LeftNavBarDashboard() {
   return (
     <div className="flexContainerLeft">
       <ul className="ulMenu">
-        <Link href={"/dashboard/"}>
+        <Link href={"/admin/"}>
           <li className="linkMenu">
             <AiOutlineHome className="iconNav" />
           </li>

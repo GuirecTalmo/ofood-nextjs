@@ -9,46 +9,90 @@ export default function RecetteForm() {
   return (
     <div className={adminStyles.mainAdmin}>
       <div className={styles.card__container}>
-        <div className={styles.Card}>
-          <div className={styles.container__picture}>
-            <Image
-              alt="image de la recette"
-              src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
-              layout="fill"
-            />
-          </div>
-          <div>
-            <div className={styles.TitleRecipeBox}>
-              <h1 className={styles.name__recipe}> Recipe Name </h1>
-              <p className={styles.time__recipe}>15 mins</p>
+        <div className={adminStyles.recipe__form}>
+          <form className={adminStyles.profilForm}>
+            <div className={adminStyles.profilFormBloc}>
+              <label className={adminStyles.labelProfil}>
+                NOM DE LA RECETTE
+              </label>
+              <input type="text" className={adminStyles.inputProfil}></input>
             </div>
-            <div className={styles.LineRecipeContainer}>
-              <hr className={styles.LineRecipe} />
+            <div className={adminStyles.profilFormBloc}>
+              <label className={adminStyles.labelProfil}>INGRÉDIENTS</label>
+              <textarea
+                type="text"
+                className={adminStyles.inputProfil}
+              ></textarea>
             </div>
-            <div className={styles.ListContainer}>
-              <h3 className={styles.TitleStep}>Ingrédients :</h3>
-              <ul className={styles.Ulsteps}>
-                <li className={styles.LiSteps}>
-                  - 1 tranche de pain de campagne
-                </li>
-                <li className={styles.LiSteps}>- 1/2 avocat</li>
-                <li className={styles.LiSteps}>- 1 oeuf</li>
-                <li className={styles.LiSteps}>- 3g de graines de sésame</li>
-              </ul>
+            <div className={adminStyles.profilFormBloc}>
+              <label className={adminStyles.labelProfil}>
+                ÉTAPES DE LA RECETTE
+              </label>
+              <textarea
+                type="text"
+                className={adminStyles.inputProfil}
+              ></textarea>
             </div>
 
-            <div className={styles.ListContainer}>
-              <h3 className={styles.TitleStep}>Étapes :</h3>
-              <ul className={styles.Ulsteps}>
-                <li className={styles.LiSteps}>- Toaster le pain</li>
-                <li className={styles.LiSteps}>
-                  - Ecraser l’avocat avec une fourchette
-                </li>
-                <li className={styles.LiSteps}>- Pocher l’oeuf</li>
-                <li className={styles.LiSteps}>- Assembler</li>
-              </ul>
+            <div className={adminStyles.profilFormBloc}>
+              <label className={adminStyles.labelProfil}>RECETTE POUR :</label>
+              <div className={adminStyles.IntoleranceBox}>
+                <input type="checkbox"></input>
+                <label className={adminStyles.labelGenre}>Intolérance 1</label>
+              </div>
+              <div className={adminStyles.IntoleranceBox}>
+                <input type="checkbox"></input>
+                <label className={adminStyles.labelGenre}>Intolérance 2</label>
+              </div>
+              <div className={adminStyles.IntoleranceBox}>
+                <input type="checkbox"></input>
+                <label className={adminStyles.labelGenre}>Intolérance 3</label>
+              </div>
+              <div className={adminStyles.IntoleranceBox}>
+                <input type="checkbox"></input>
+                <label className={adminStyles.labelGenre}>Intolérance 4</label>
+              </div>
+              <div className={adminStyles.IntoleranceBox}>
+                <input type="checkbox"></input>
+                <label className={adminStyles.labelGenre}>Intolérance 5</label>
+              </div>
+              <div className={adminStyles.IntoleranceBox}>
+                <input type="checkbox"></input>
+                <label className={adminStyles.labelGenre}>Intolérance 6</label>
+              </div>
             </div>
-          </div>
+
+            <div className={adminStyles.profilFormBlocLast}>
+              <p className={adminStyles.labelProfil}>VISUEL</p>
+              <div className={adminStyles.banner__container}>
+                <Image
+                  alt="logo__img"
+                  src="https://i89.servimg.com/u/f89/09/02/66/41/plat_o10.jpg"
+                  layout="fill"
+                />
+              </div>
+              <label
+                className={adminStyles.labelProfilAvatar}
+                htmlFor="avatar"
+              ></label>
+              <input
+                type="file"
+                className={adminStyles.file}
+                id="avatar"
+                name="avatar"
+                accept="image/png, image/jpeg"
+              />
+            </div>
+
+            <div className={adminStyles.buttons__container}>
+              <button className={adminStyles.button__modify} type="submit">
+                Enregistrer
+              </button>
+              <button className={adminStyles.button__supp} type="submit">
+                Supprimer
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
