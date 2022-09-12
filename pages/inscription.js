@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Inscription.module.scss";
-import stylesContact from "../styles/Contact.module.scss";
-import stylesHome from "../styles/Home.module.scss";
 import Layout from "../components/Layout";
 import Register from "../components/auth/Register";
 
