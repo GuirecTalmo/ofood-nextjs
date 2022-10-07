@@ -101,14 +101,29 @@
 }
 
 .pictureContainer {
-  width: 100%;
+  width: 26rem;
   position: relative;
   display: none;
 
   @media (min-width: $desktop_width) {
-    width: 100%;
+    width: 26rem;
     position: relative;
     display: block;
+  }
+}
+
+.pictureContainer2 {
+  width: 26rem;
+  position: relative;
+  display: none;
+  max-height: 10rem;
+
+  @media (min-width: $desktop_width) {
+    width: 26rem;
+    position: relative;
+    display: block;
+    max-height: 10rem;
+    margin: 7rem 0rem 0rem 5rem;
   }
 }
 
@@ -166,6 +181,19 @@
     90deg,
     rgba(109, 152, 80, 1) 0%,
     rgba(147, 203, 109, 1) 100%
+  );
+  color: #fff;
+  transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+}
+
+.btnPrimary:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(147, 203, 109, 1) 0%,
+    rgba(109, 152, 80, 1) 100%
   );
   color: #fff;
 }

@@ -36,16 +36,16 @@ export default function HomePage() {
           <div className={styles.pictureContainer}>
             <Image
               alt="logo__img"
-              src="/assets/img/image-ofood-1.svg"
+              src="/assets/img/ofood-rounded.png"
               layout="fill"
             />
           </div>
         </div>
         <div className={styles.leftContainer2}>
-          <div className={styles.pictureContainer}>
+          <div className={styles.pictureContainer2}>
             <Image
               alt="logo__img"
-              src="/assets/img/image-ofood-2.svg"
+              src="/assets/img/ofood-line.png"
               layout="fill"
             />
           </div>
