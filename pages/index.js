@@ -9,7 +9,11 @@ export default function HomePage() {
     <div className={styles.main}>
       <Head>
         <title>O&apos;food</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://i89.servimg.com/u/f89/09/02/66/41/favico10.png"
+        />
       </Head>
       <div className={styles.background}></div>
       <div className={styles.homeContainer}>
